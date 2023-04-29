@@ -1,19 +1,12 @@
 
-import Button from './components/eps22/html/Button'
-import Input from './components/eps22/html/Input'
 import './style/App.css'
+import CustomComponents from './components/eps23/CustomComponents';
 
 function App() {
 
 	return (
 		<>
-			<Button
-				variant='primary'
-				onClick={() => console.log('click')} >
-				Primary Button
-			</Button >
-			<br />
-			<Input />
+			<CustomComponents name='Luke Reid'/>
 		</>
 	)
 }
