@@ -1,6 +1,6 @@
 
 import './style/App.css'
-import Counter from './components/eps12/Counter';
+import Counter from './components/eps13/Counter';
 
 function App() {
 
