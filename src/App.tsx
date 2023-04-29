@@ -18,6 +18,22 @@ function App() {
 				onClick={(item) => console.log(item)} />
 			<br />
 
+			{/* <List items={[
+				{
+					first: 'Seth',
+					last: 'Mason'
+				},
+				{
+					first: 'Johanna ',
+					last: 'Palmer'
+				},
+				{
+					first: 'Owen ',
+					last: 'Byrd'
+				},
+			]}
+				onClick={(item) => console.log(item)} />
+			<br /> */}
 		</>
 	)
 }

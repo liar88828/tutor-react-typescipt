@@ -1,7 +1,9 @@
 
 type ListProps = {
-    items: string[] | number[]
-    onClick: (value: string | number) => void
+    items: string[] | number[] // | { first: string, last: string }[]
+    onClick: (value: string | number
+        // | { first: string, last: string }
+    ) => void
 }
 
 const List = ({ items, onClick }: ListProps) => {
