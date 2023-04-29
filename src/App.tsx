@@ -1,19 +1,23 @@
 
 import './style/App.css'
-import Private from './components/eps18/auth/Private';
-import Profile from './components/eps18/auth/Profile';
+import List from './components/eps19/generic/List';
 
 function App() {
 
 	return (
 		<>
-			<Private
-				isLoggedIn={false}
-				component={Profile} />
+			<List items={[
+				'Arthur Sanders',
+				'Clyde Hampton',
+				'Brandon Taylor'
+			]}
+				onClick={(item) => console.log(item)} />
 			<br />
-			<Private
-				isLoggedIn={true}
-				component={Profile} />
+
+			<List items={[1, 2, 3]}
+				onClick={(item) => console.log(item)} />
+			<br />
+
 		</>
 	)
 }
