@@ -1,12 +1,12 @@
 
 import './style/App.css'
-import User from './components/eps11/User';
+import Counter from './components/eps12/Counter';
 
 function App() {
 
 	return (
 		<>
-			<User />
+			<Counter />
 		</>
 	)
 }
