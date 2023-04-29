@@ -1,17 +1,14 @@
 
 import './style/App.css'
-import RandomNumber from './components/eps20/restriction/RandomNumber';
+import Toast from './components/eps21/Toast';
 
 function App() {
 
 	return (
 		<>
-			<RandomNumber value={10} isPositive />
-			<br />
-			<RandomNumber value={10} isNegative />
-			<br />
-			<RandomNumber value={10} isZero />
-
+			{/* <Toast position='center-center' /> */}			{/*  error*/}
+			<Toast position='center-top' />
+			<Toast position='center' />
 		</>
 	)
 }
