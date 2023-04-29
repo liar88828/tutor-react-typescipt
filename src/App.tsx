@@ -1,37 +1,22 @@
-import { Greeting } from './components/Greeting'
-import { Person } from './components/Person'
-import { PersonList } from './components/PersonList'
+import { Greeting } from './components/eps3dan4/Greeting';
+import { Heading } from './components/eps5/Heading'
+import { Oscar } from './components/eps5/Oscar'
+import { Status } from './components/eps5/Status'
 import './style/App.css'
 
 function App() {
-	const personName = {
-		first: 'John',
-		last: 'Doe',
-	}
 
-
-	const nameList = [{
-		first: 'Cora ',
-		last: 'HortonJohn',
-	},
-	{
-		first: 'Julian ',
-		last: 'WongJohn',
-	}, {
-		first: 'Nathan ',
-		last: 'SwansonJohn',
-	}
-	]
 	return (
 		<>
-			<Greeting
-				name={'wiswash'}
-				messageCount={10}
-				isLogIn={false}
-			/>
-			<Person name={personName} />
-			<PersonList names={nameList}/>
-			{/* <Greeting name={10} /> */} {/*   akan error karena bukan string*/}
+			<Status status='loading' />
+			<Status status='success' />
+			<Status status='error' />
+			{/*  */}
+			<Oscar>
+				<Heading> Oscar goes rt Sadie Page </Heading>
+			</Oscar>
+			{/*  */}
+			<Greeting name='Matthew Webb' isLogIn={true} />
 		</>
 	)
 }
