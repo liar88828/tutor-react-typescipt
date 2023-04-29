@@ -1,22 +1,24 @@
-import { Greeting } from './components/eps3dan4/Greeting';
-import { Heading } from './components/eps5/Heading'
-import { Oscar } from './components/eps5/Oscar'
-import { Status } from './components/eps5/Status'
+
 import './style/App.css'
+import { Button } from './components/eps6/Button';
+import { Input } from './components/eps6/Input';
 
 function App() {
 
 	return (
 		<>
-			<Status status='loading' />
-			<Status status='success' />
-			<Status status='error' />
+			{/* <Button handleClick={(event) => {
+				console.log('Button Click ', event)
+			}} /> */}
+			<Button handleClick={
+				(event, id) => {
+					console.log('Button Click ', event, id)
+				}
+			} />
 			{/*  */}
-			<Oscar>
-				<Heading> Oscar goes rt Sadie Page </Heading>
-			</Oscar>
-			{/*  */}
-			<Greeting name='Matthew Webb' isLogIn={true} />
+			<Input value=''
+				handleChange1={(event) => console.log(event)} 
+				/>
 		</>
 	)
 }
