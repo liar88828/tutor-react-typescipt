@@ -1,12 +1,15 @@
 
 import './style/App.css'
-import Counter from './components/eps13/Counter';
+import { ThemeContextProvider } from './components/eps14/context/ThemeContext';
+import Box from './components/eps14/context/Box';
 
 function App() {
 
 	return (
 		<>
-			<Counter />
+			<ThemeContextProvider>
+				<Box />
+			</ThemeContextProvider>
 		</>
 	)
 }
