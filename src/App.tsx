@@ -1,15 +1,15 @@
 
+import User from './components/eps15/context/User'
+import { UserContextProvider } from './components/eps15/context/UserContext'
 import './style/App.css'
-import { ThemeContextProvider } from './components/eps14/context/ThemeContext';
-import Box from './components/eps14/context/Box';
 
 function App() {
 
 	return (
 		<>
-			<ThemeContextProvider>
-				<Box />
-			</ThemeContextProvider>
+			<UserContextProvider>
+				<User />
+			</UserContextProvider>
 		</>
 	)
 }
