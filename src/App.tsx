@@ -1,12 +1,19 @@
 
 import './style/App.css'
-import Counter from './components/eps17/class/Counter';
+import Private from './components/eps18/auth/Private';
+import Profile from './components/eps18/auth/Profile';
 
 function App() {
 
 	return (
 		<>
-			<Counter message='hello' />
+			<Private
+				isLoggedIn={false}
+				component={Profile} />
+			<br />
+			<Private
+				isLoggedIn={true}
+				component={Profile} />
 		</>
 	)
 }
