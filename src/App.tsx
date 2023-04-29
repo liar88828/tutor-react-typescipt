@@ -1,24 +1,12 @@
 
 import './style/App.css'
-import { Button } from './components/eps6/Button';
-import { Input } from './components/eps6/Input';
+import Container from './components/eps7/Container';
 
 function App() {
 
 	return (
 		<>
-			{/* <Button handleClick={(event) => {
-				console.log('Button Click ', event)
-			}} /> */}
-			<Button handleClick={
-				(event, id) => {
-					console.log('Button Click ', event, id)
-				}
-			} />
-			{/*  */}
-			<Input value=''
-				handleChange1={(event) => console.log(event)} 
-				/>
+		<Container styles={{ border: '1px solid black', padding: '1rem' ,background:'gray'}}/>
 		</>
 	)
 }
