@@ -1,12 +1,12 @@
 
 import './style/App.css'
-import Container from './components/eps7/Container';
+import User from './components/eps10/state/User';
 
 function App() {
 
 	return (
 		<>
-		<Container styles={{ border: '1px solid black', padding: '1rem' ,background:'gray'}}/>
+			<User />
 		</>
 	)
 }
