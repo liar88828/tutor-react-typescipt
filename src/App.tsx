@@ -1,39 +1,17 @@
 
 import './style/App.css'
-import List from './components/eps19/generic/List';
+import RandomNumber from './components/eps20/restriction/RandomNumber';
 
 function App() {
 
 	return (
 		<>
-			<List items={[
-				'Arthur Sanders',
-				'Clyde Hampton',
-				'Brandon Taylor'
-			]}
-				onClick={(item) => console.log(item)} />
+			<RandomNumber value={10} isPositive />
 			<br />
-
-			<List items={[1, 2, 3]}
-				onClick={(item) => console.log(item)} />
+			<RandomNumber value={10} isNegative />
 			<br />
+			<RandomNumber value={10} isZero />
 
-			{/* <List items={[
-				{
-					first: 'Seth',
-					last: 'Mason'
-				},
-				{
-					first: 'Johanna ',
-					last: 'Palmer'
-				},
-				{
-					first: 'Owen ',
-					last: 'Byrd'
-				},
-			]}
-				onClick={(item) => console.log(item)} />
-			<br /> */}
 		</>
 	)
 }
